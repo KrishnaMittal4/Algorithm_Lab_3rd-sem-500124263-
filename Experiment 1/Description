@@ -1,0 +1,25 @@
+1. Recursive Insertion in a Binary Search Tree (BST):  
+Description: In the recursive approach, the function calls itself repeatedly
+to traverse the tree until it finds the correct position to insert the new node. 
+The insertion starts at the root, and for each node, if the value to be inserted is less than the current node's key,
+the function recurses into the left subtree; otherwise, it recurses into the right subtree.
+How It Works:
+The recursive function starts from the root of the tree.
+At each node, it compares the key to be inserted with the current node's key.
+If the key is smaller, the function calls itself recursively to insert the key into the left subtree.
+If the key is larger, it recurses into the right subtree.
+The recursion continues until it finds an appropriate NULL position, where the new node can be inserted.
+
+  
+2. Iterative Insertion in a Binary Search Tree (BST):  
+Description: In the iterative approach, a loop is used to traverse the tree.
+Starting at the root, the function iteratively moves left or right, 
+depending on whether the value to be inserted is smaller or larger than the current node's key.
+Once it finds the correct position, it inserts the new node.
+How It Works:
+The iterative function also starts at the root of the tree.
+Instead of using recursion, a loop is used to traverse the tree:
+If the key to be inserted is smaller than the current node's key, the loop moves to the left child.
+If it is larger, the loop moves to the right child.
+Once it finds the appropriate NULL position (where the new node should be inserted), it places the new node.
+  
